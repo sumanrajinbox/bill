@@ -20,6 +20,8 @@ function Demo() {
                 type="email"
                 onChange={formik.handleChange}
                 value={formik.values.email}
+                autocomplete="off"
+                spellcheck="false"
             />
 
             <button type="submit">Submit</button>
