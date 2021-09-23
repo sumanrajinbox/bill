@@ -1,22 +1,13 @@
 import React from 'react';
-import { createTheme, withStyles, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import { green, purple } from '@material-ui/core/colors';
+
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import Drawer from './Drawer';
-import { ListItem } from '@material-ui/core';
-
-import List from '@material-ui/core/List';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -54,6 +45,13 @@ export default function Navbar() {
                     <Link to="/demo"> <Button variant="contained" color="primary">
                         Demo
                     </Button></Link>
+                    <Link to="/users"> <Button variant="contained" color="primary">
+                        Users
+                    </Button></Link>
+                    <Link to="/alldata"> <Button variant="contained" color="primary">
+                        All data
+                    </Button></Link>
+
                 </Toolbar>
             </AppBar>
         </>

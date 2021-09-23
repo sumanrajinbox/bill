@@ -2,8 +2,7 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 import Login from './Login'
@@ -12,9 +11,9 @@ import SignUp from './Signup'
 import About from './About'
 import Home from './Home'
 import Users from './Users'
-import Layout from './Layout';
-import Drawer from './Drawer';
+
 import Demo from './Demo';
+import AllData from './AllData'
 
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -48,6 +47,7 @@ export default function App() {
             <Route path='/About' component={About} />
             <Route path='/Users' component={Users} />
             <Route path='/Demo' component={Demo} />
+            <Route path='/AllData' component={AllData} />
           </Switch>
         </Router>
         </Grid>
